@@ -1,20 +1,23 @@
 @media (min-width: 320px) {
+    html {
+        font-size: 100%;
+    }
     h1,
     h2,
     h3,
-    a.anchor,
-    input[type="submit"],
-    .anchor--size-xxl {
+    a,
+    input[type="submit"] {
         font-family: 'East Sea Dokdo', cursive;
     }
     h1,
     h2,
     h3 {
+        font-weight: 400;
         text-align: center;
         margin: 20px 0 10px 0;
     }
     h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 2.5rem;
     }
     p,
@@ -38,8 +41,8 @@
         display: inline-block;
         padding-right: 30px;
     }
-    label {
-        font-size: 0.875rem;
+    li:nth-of-type(4) {
+        padding-right: 0;
     }
     input[type="text"] {
         font-size: 0.875rem;
@@ -51,11 +54,8 @@
     }
     input[type="submit"] {
         font-size: 1.5625rem;
-        height: 45px;
-        width: 110px;
-    }
-    li:nth-of-type(4) {
-        padding-right: 0;
+        height: 40px;
+        width: 140px;
     }
     body {
         margin: 0;
@@ -74,14 +74,14 @@
         width: 90%;
     }
     .clearfix:after {
-        visibility: hidden;
+        clear: both;
+        content: '';
         display: block;
         font-size: 0;
-        content: '';
-        clear: both;
         height: 0;
+        visibility: hidden;
     }
-    [class*="--center-element"],
+    [class*="--position-center"],
     address {
         text-align: center;
     }
@@ -115,14 +115,14 @@
     [class*="--padding-all-no-top"] {
         padding: 0 20px 40px 20px;
     }
-    .header--background-image {
-        height: 35vh;
-    }
     [class*="background-image"] {
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 25vh
     }
-    .div--background-image {
-        height: 250px;
+    .header--background-image {
+        height: 50vh;
     }
     .new-product-image {
         background-image: url(../assets/new-products.jpg);
@@ -133,12 +133,10 @@
     .paint-cans {
         background-image: url(../assets/paint-cans-hand.jpg)
     }
-    .new-products {
-        padding: 35px 20px 100px;
+    .section--padding-bottom-extra {
+        padding-bottom: 100px;
     }
-    .new-products,
-    .community,
-    .contact {
+    .section--color-very-light-pink {
         background: #FFE9E9;
     }
     .section--color-light-pink {
@@ -181,7 +179,7 @@
     label,
     address p,
     footer p {
-        font-size: 0.8rem;
+        font-size: 0.89rem;
         margin: 0;
         padding: 0;
     }
